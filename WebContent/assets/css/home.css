@@ -1,0 +1,448 @@
+@charset "utf-8";
+
+/* 목록 아이템(li) 정렬 */
+.pull-left {
+    float: left;
+}
+
+/* 목록 (ul) 마감 처리 */
+.clearfix:after {
+    display: block;
+    content: '';
+    float: none;
+    clear: both;
+}
+
+/* 글자 오렌지 색상 적용 */
+.orange_light {
+    color: #f8aa23;
+}
+
+.orange_dark {
+    color: #f38200;
+}
+
+/* 링크 태그 밑줄 삭제, 글꼴 색상 */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/************* 상단 영역 ****************/
+#header {
+    font-family: "나눔고딕", "맑은고딕", "굴림";
+}
+
+/* bean 영역 설정 */
+#bean {
+    width: auto;
+    height: 119px;
+    background: url("../img/header/bean_bgrd.PNG") repeat-x;
+    position: relative;
+}
+
+/* h1 (#bean > h1) 영역 */
+#bean>h1 {
+    width: auto;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 122px;
+    margin-left: 320px;
+}
+
+/* 목록 정의 (ul) 영역 */
+#bean .bean-login {
+    /*border: 1px solid blue;*/
+    width: auto;
+    position: absolute;
+    top: 41px;
+    right: 10px;
+    margin-right: 335px;
+}
+
+/* 로그인 버튼 (#bean > li > a) 크기, 배경 색, 글자 색상 지정 */
+#bean .bean-login-item .login {
+    display: block;
+    width: 174px;
+    height: 37px;
+    line-height: 37px;
+    background-color: #fff;
+    color: #2f1c11;
+    text-align: center;
+    margin-right: 15px;
+}
+
+/* 회원가입 버튼 크기 (#bean > li > a), 배경 색, 글자 색상 지정 */
+#bean .bean-login-item .signin {
+    display: block;
+    width: 174px;
+    height: 37px;
+    line-height: 37px;
+    border: 1px solid white;
+    color: white;
+    background-color: #2f1c11;
+    text-align: center;
+
+}
+
+/* top 영역 설정 */
+#top {
+    width: auto;
+    height: 45px;
+    background-color: #eee;
+    position: relative;
+}
+
+/* top 영역 목록(ul) 영역 크기, 위치 설정 */
+#top>.top {
+    position: absolute;
+    top: 0;
+    right: 440px;
+}
+
+/* top 영역 > ul > li > a 블록 설정 */
+#top .top-item>a {
+    display: block;
+    padding: 15px;
+    padding-right: 20px;
+
+}
+
+/* top 영역 > ul > li > a 의 첫 번째 오른쪽 테두리 */
+#top .top-item:first-child {
+    border-right: 1px solid lightgrey;
+
+}
+
+/* top 영역 > img 위치 설정 */
+#top>.top-bean {
+    position: absolute;
+    top: 0;
+    right: 350px;
+    height: 45px;
+}
+
+#top>.top-bean img {
+    height: 100%;
+}
+
+
+/* tab 영역 설정 */
+#tab {
+    width: auto;
+    height: 105px;
+    position: relative;
+}
+
+/* tab 영역 > h1 크기, 위치 설정 */
+#tab>h1 {
+    padding: 15px 0px;
+    position: absolute;
+    margin-left: 320px;
+}
+
+/* tab 영역 > ul 영역 */
+#tab .tab {
+    padding: 15px 0px;
+    width: 900px;
+    margin: auto;
+}
+
+/* tab 영역 > ul > li > a 블록 처리, 크기 설정 */
+#tab .tab-item>a {
+    display: block;
+    padding: 30px 30px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: ;
+    text-align: center;
+}
+
+/* tab 영역 > img 위치 설정 */
+.tab-search {
+    position: absolute;
+    padding-top: 15px;
+    top: 24px;
+    right: 365px;
+}
+
+/************* 내용 영역 ****************/
+/* 내용 영역 크기, 위치 설정 */
+#content {
+    border: 1px solid blue;
+}
+
+/* holiday 영역 크기 설정, 배경 이미지 삽입, 글자 날리기 */
+#div1 .holiday {
+    width: auto;
+    height: 539px;
+    background: url(../img/container/div1/img_drinks.PNG) no-repeat;
+    background-size: 100% 100%;
+    text-indent: -10000px;
+}
+
+/* event 영역 크기 설정, 배경 이미지 삽입, 글자 날리기 */
+#div1 .event {
+    width: auto;
+    height: 403px;
+    background: url(../img/container/div1/img_event.PNG) no-repeat;
+    background-size: 100% 100%;
+    text-indent: -10000px;
+}
+
+/* #div1 > .holiday의 상대 위치 지정 */
+#div1 .holiday {
+    position: relative;
+}
+
+/***** 검색창 영역 ******/
+/* 검색창(#searchbox) 크기, 배경 색, 위치 설정 */
+#searchbox {
+    width: 1260px;
+    height: 80px;
+    background-color: #eee;
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+/* 검색창 > .searchbox-input */
+#searchbox .searchbox-input {
+    position: relative;
+}
+
+/* 검색창 > input */
+#searchbox input {
+    display: block;
+    width: 1164px;
+    height: 30px;
+    border: 2px solid #222;
+    background-color: #eee;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+/* 검색창 >  */
+#searchbox a {
+    display: block;
+    width: 30px;
+    height: 26px;
+    background: url(../img/header/searchbox_search.png) no-repeat;
+    position: absolute;
+    top: 28px;
+    right: 24px;
+}
+
+/***** tab의 서브 메뉴 ******/
+/* tab의 서브 메뉴 영역 배경 색, 위치, padding 값 지정 */
+.holiday .sub {
+    background-color: #eee;
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+}
+
+/* table 안의 기본 설정 */
+table {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+/* table의 제목 부분 폰트 설정 */
+.bold-size {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+/* table > tr > td 사이 간격 조정, 글자 색상 지정 */
+.holiday .sub td {
+    padding: 7px;
+    width: 200px;
+}
+
+/**** BUY ONLINE 서브 메뉴 크기, 위치 설정 ****/
+#buy_online {
+    width: 1260px;
+    height: 363px;
+    left: 300px;
+    display: none;
+}
+
+/****  MEMBER'S CLUB 서브 메뉴 ****/
+#members_club {
+    width: 604px;
+    height: 205px;
+    padding-bottom: 50px;
+    left: 650px;
+    display: none;
+}
+
+/****  MENU 서브 메뉴 ****/
+#menu {
+    width: 811px;
+    height: 335px;
+    left: 750px;
+    display: none;
+
+}
+
+/****  STORE 서브 메뉴 ****/
+#store {
+    width: 201px;
+    height: 126px;
+    left: 950px;
+    display: none;
+}
+
+/**** THE COFFEE BEAN 서브 메뉴 ****/
+#the_coffee_bean {
+    width: 1062px;
+    height: 205px;
+    left: 500px;
+    display: none;
+}
+
+/**** CBTL 서브 메뉴 ****/
+#cbtl {
+    width: 202px;
+    height: 268px;
+    left: 1260px;
+    display: none;
+}
+
+#cbtl td {
+    font-size: 15px;
+}
+
+
+/**** div2 - 슬라이드 영역 ****/
+
+
+
+
+/**** div3 - 보라색 영역 ****/
+/* div3 전체 영역 크기, 배경 색상 지정 */
+#div3 {
+    width: auto;
+    height: 621px;
+    color: white;
+    background-color: #7C51A1;
+    text-align: center;
+}
+
+/* div3 > h3 폰트 크기, 위치 설정 */
+#div3>h3 {
+    font-family: "a고딕11";
+    padding-top: 55px;
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+
+/* div3 > .gallery 가운데 정렬 */
+#div3 .gallery {
+    margin: auto;
+}
+
+/* div3 > .gallery > .gallery-item(a 태그) 블록 및 크기 설정 */
+#div3 .gallery .gallery-item {
+    display: block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* .gallery-item 애니메이션 효과 */
+.scale img {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.scale:hover img {
+    transform: scale(1.0995);
+    -webkit-transform: scale(1.0995);
+    -moz-transform: scale(1.0995);
+    -ms-transform: scale(1.0995);
+    -o-transform: scale(1.0995);
+    transition: all 0.5s ease-in-out;
+    background-color: #7C51A1;
+    opacity: 0.75;
+}
+
+/* .gallery-item img 가득 채우기 */
+#div3 .gallery-item img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .instagram 블록 설정 및 위치 정렬 */
+#div3 .instagram {
+    display: block;
+    margin-top: 35px;
+}
+
+
+/************* 하단 영역 ****************/
+/* footer 영역 크기 및 위치 지정 */
+#footer {
+    width: auto;
+    min-height: 500px;
+    background-color: #eee;
+}
+
+/* footer1 영역 크기 설정 */
+#footer1 {
+    height: 280px;
+    padding-top: 60px;
+}
+
+/* footer1 - 테이블 전체 영역 */
+#footer1 table {
+    width: 1260px;
+    margin: auto;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #604f48;
+    border-collapse: separate;
+}
+
+/* 테이블 > td */
+#footer table td {
+    padding: 6px;
+    width: 17%;
+}
+
+/* footer2의 목록 정의(ul) 위치 설정 */
+#footer2 .list {
+    padding: 30px 0;
+    margin-left: 300px;
+}
+
+/* footer2 > 목록 정의(ul) > 개별 목록 (li) */
+#footer2 .list-item {
+    padding: 0 10px;
+    border-right: 2px solid #2F1C11;
+}
+
+/* footer > address 태그 */
+address {
+    margin-left: 310px;
+    font-style: normal;
+}
+
+/* address 태그 > p 태그 */
+address p {
+    margin-bottom: 10px;
+}
+
+/* address 태그 > 마지막 p 태그 */
+address p:last-child {
+    padding-bottom: 30px;
+}
