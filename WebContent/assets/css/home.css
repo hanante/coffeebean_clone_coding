@@ -28,6 +28,11 @@ a {
     text-decoration: none;
 }
 
+/* hide 클래스 */
+.hide {
+    display: none;
+}
+
 /************* 상단 영역 ****************/
 #header {
     font-family: "나눔고딕", "맑은고딕", "굴림";
@@ -156,7 +161,6 @@ a {
     margin-right: 10px;
     font-weight: bold;
     font-size: 15px;
-    color: ;
     text-align: center;
 }
 
@@ -206,6 +210,7 @@ a {
     position: absolute;
     top: 0;
     left: 300px;
+    display: none;
 }
 
 /* 검색창 > .searchbox-input */
@@ -227,7 +232,7 @@ a {
     left: 15px;
 }
 
-/* 검색창 >  */
+/* 검색창 > 검색 이미지 */
 #searchbox a {
     display: block;
     width: 30px;

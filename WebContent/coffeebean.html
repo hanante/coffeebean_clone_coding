@@ -15,7 +15,7 @@
         <!-- 상단 영역 -->
         <div id="header">
             <!-- Bean 영역 -->
-            <div id="bean">
+            <div id="bean" class="hide">
                 <h1><span class="orange_light">로그인</span>을 하시면 커피빈 멤버스 클럽의 <span class="orange_light">다양한혜택</span>을 받으실 수 있습니다.</h1>
                 <ul class="bean-login clearfix">
                     <li class="bean-login-item pull-left"><a href="#" class="login">로그인</a></li>
@@ -31,7 +31,7 @@
                     <li class="top-item pull-left"><a href="#">단체 및 기업구매</a></li>
                     <li class="top-item pull-left"><a href="#">고객서비스</a></li>
                 </ul>
-                <a href="#" class="top-bean" id="show-x"><img src="assets/img/header/top_bean_x.PNG"></a>
+                <a href="#" class="top-bean"><img src="assets/img/header/top_bean.PNG" id="show-bean" data-over="assets/img/header/top_bean_x.PNG"></a>
             </div>
             <!-- Tab 영역 -->
             <div id="tab">
@@ -44,7 +44,7 @@
                     <li class="tab-item pull-left"><a href="#the_coffee_bean">THE COFFEE BEAN</a></li>
                     <li class="tab-item pull-left"><a href="#cbtl">CBTL</a></li>
                 </ul>
-                <a href="#" class="tab-search" id="search"><img src="assets/img/header/menu_x.PNG" alt="search"></a>
+                <a href="#" class="tab-search" id="search"><img src="assets/img/header/menu_search.PNG" alt="search" data-over="assets/img/header/menu_x.PNG"></a>
             </div>
         </div>
         <!-- 내용 영역 -->
@@ -412,6 +412,9 @@
             </div>
         </div>
     </div>
+    <!-- 스크립트 참조 -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/coffeeBean.js"></script>
 </body>
 
 </html>
