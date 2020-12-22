@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
     /* 엑스 이미지 클릭 시 이벤트 */
     $("#top #show-bean").click(function() {
         // 콩 이미지로 변경
@@ -14,7 +14,7 @@ $(function() {
 
     /* 메뉴 탭 hover 시 이벤트 */
     $("#tab .tab-item a").hover(
-        // 마우스 올라왔을 때
+        // 마우스 올라 왔을 때
         function() {
             // 글씨 색 변경
             $(this).css("color", "#f38200");
@@ -49,4 +49,64 @@ $(function() {
     $("#input-box").click(function() {
         $(this).attr("placeholder", "");
     });
+
+    /****** slick 구현 ******/
+    /*** 슬라이드 1 ***/
+    $(".product-slide1").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        speed: 3000,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        dotsClass: 'slick-dots',
+        arrows: false
+    });
+
+    /* 이미지 hover 시 이벤트 */
+    $(".product-image img").hover(
+        // 마우스 올라 왔을 때
+        function() {
+            // quickview 뜸
+            $(this).parent().children().find(".quickview").show();
+            // 이미지 배경 색상 입혀짐
+            $(this).css("background-color", "rgba(255,255,255,0.8").fadeIn(300);
+        },
+        // 마우스 내려 갔을 때
+        function() {
+            // quickview 사라짐
+            $(".quickview").hide();
+            // 이미지 배경 색상 사라짐
+            $(this).css("background-color", "none");
+        }
+    );
+
+
+    /*** 슬라이드 2 ***/
+    $(".product-slide2").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        speed: 3500,
+        autoplay: true,
+        autoplaySpeed: 3500,
+        dots: true,
+        dotsClass: 'slick-dots',
+        arrows: false
+    });
+
+    /* 이미지 hover 시 이벤트 */
+    $(".new-item-image img").hover(
+        // 마우스 올라 왔을 때
+        function() {
+            var white = $(this).css("background-color", "rgba(255,255,255,0.8)");
+            white.fadeIn(300);
+        },
+
+        // 마우스 내려 갔을 때
+        function() {
+            $(".new-item-image").css("background-color", "none");
+        }
+    );
 });

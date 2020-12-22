@@ -33,6 +33,7 @@ a {
     display: none;
 }
 
+
 /************* 상단 영역 ****************/
 #header {
     font-family: "나눔고딕", "맑은고딕", "굴림";
@@ -325,9 +326,159 @@ table {
 }
 
 
-/**** div2 - 슬라이드 영역 ****/
+/**** div2 영역 ****/
+#div2 {
+    width: 1270px;
+    min-height: 1420px;
+    margin: auto;
+}
 
+/** 슬라이드 1 전체 영역 **/
+/* title(h2) 영역 */
+.main-wrap1 .main-title {
+    width: 126px;
+    height: 27px;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-indent: -10000px;
+    background: url(../img/container/div2/slide1/slide1_title.PNG) no-repeat;
+}
 
+/* 슬라이드 영역 속도 조절 */
+.product-slide {
+    transition: ease 5s;
+}
+
+/* 슬라이드 영역 > 제품 1개 > 이미지군 영역 상대 위치 지정 */
+.product-slide1 .product-item .product-images {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* 슬라이드 영역 > 제품 1개 > 이미지군 영역 > a 블록 처리 */
+.product-slide1 .product-images .product-image {
+    display: block;
+    width: 302px;
+    height: 302px;
+    padding: 15px;
+}
+
+/* 슬라이드 영역 > 제품 1개 > 이미지군 영역 > 제품 이미지 */
+.product-slide1 .product-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 슬라이드 영역 > 제품 1개 > 이미지군 영역 > quickview 이미지 */
+.product-slide1 .quickview img {
+    position: absolute;
+    right: 38px;
+    bottom: 60px;
+    visibility: hidden;
+}
+
+/* 슬라이드 영역 > 제품 1개 > 텍스트군 영역 */
+.product-slide1 .product-text {
+    width: 310px;
+    height: 130px;
+    margin: auto;
+    text-align: center;
+    padding-right: 10px;
+    color: #333;
+}
+
+/* 텍스트 영역 > 제품명 */
+.product-slide1 .product-text .name {
+    display: block;
+    width: 310px;
+    height: 22px;
+    font: 18px "나눔고딕", "맑은고딕", "굴림";
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* 텍스트 영역 > 제품 설명 */
+.product-slide1 .product-text .desc {
+    display: block;
+    width: 316px;
+    height: 17px;
+    font: 14px "나눔고딕", "맑은고딕", "굴림";
+    margin-bottom: 15px;
+}
+
+/* 텍스트 영역 >  고정 가격 */
+.product-slide1 .product-text .fixed-price {
+    display: block;
+    width: 316px;
+    height: 15px;
+    text-decoration: line-through;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* 텍스트 영역 >  가격 */
+.product-slide1 .product-text .price {
+    display: block;
+    width: 316px;
+    height: 16px;
+    color: #f38200;
+    font: 14px "나눔고딕", "맑은고딕", "굴림";
+    margin-bottom: 5px;
+}
+
+/* 텍스트 영역 > 품절 */
+.product-slide1 .product-text .soldout img {
+    width: 52px;
+    height: 25px;
+    margin: auto;
+}
+
+/**** 슬라이드 2 영역 ****/
+/* title(h2) 영역 */
+.main-wrap2 .main-title {
+    width: 125px;
+    height: 28px;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-indent: -10000px;
+    background: url(../img/container/div2/slide2/slide2_title.PNG) no-repeat;
+}
+
+/* 슬라이드 영역 > 제품 1개 영역 > 이미지 영역 a 블록 처리 */
+.main-wrap2 .new-item a {
+    display: block;
+    width: 384px;
+    height: 473px;
+    padding: 15px;
+    margin: auto;
+}
+
+/* 이미지 영역 > a > img 가득 채우기 */
+.new-item-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 슬라이드 영역 > 제품 1개 영역 > 제품 소개 영역 */
+.new-item .new-item-text {
+    margin-bottom: 40px;
+}
+
+/* 슬라이드 영역 > 제품 1개 영역 > 제품 소개 영역 a 블록 처리 */
+.new-item .new-item-text a {
+    display: block;
+    width: 300px;
+    height: 22px;
+    margin: auto;
+    text-align: center;
+    color: #f38200;
+    font: 20px "Bell MT", "나눔고딕", "맑은고딕", "굴림";
+    font-weight: bolder;
+}
 
 
 /**** div3 - 보라색 영역 ****/
