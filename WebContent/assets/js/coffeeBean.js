@@ -64,21 +64,46 @@ $(document).ready(function() {
         arrows: false
     });
 
+    /* 시작, 정지 버튼 공통 구현 */
+    $(".stop").click(function() {
+        // 시작 버튼 이미지로 변경
+        var stop = $(this).children().attr("src");
+        var play = $(this).children().data("over");
+        $(this).children().attr("src", play);
+        $(this).children().data("over", stop);
+
+        // 슬라이드 기능 정지
+        $(this).prev().slick("slickPause");
+
+    });
+
     /* 이미지 hover 시 이벤트 */
     $(".product-image img").hover(
         // 마우스 올라 왔을 때
         function() {
             // quickview 뜸
-            $(this).parent().children().find(".quickview").show();
+            $(this).parent().next().children().show();
             // 이미지 배경 색상 입혀짐
-            $(this).css("background-color", "rgba(255,255,255,0.8").fadeIn(300);
+            $(this).css("opacity", "0.8");
         },
         // 마우스 내려 갔을 때
         function() {
             // quickview 사라짐
-            $(".quickview").hide();
+            $(".quickview img").hide();
             // 이미지 배경 색상 사라짐
-            $(this).css("background-color", "none");
+            $(this).css("opacity", "1");
+        }
+    );
+
+    /* quickview hover 시 이벤트 */
+    $(".quickview img").hover(
+        // 마우스 올라 왔을 때
+        function() {
+            $(this).show();
+        },
+        // 마우스 내려 갔을 때
+        function() {
+            $(this).hide();
         }
     );
 
@@ -100,13 +125,12 @@ $(document).ready(function() {
     $(".new-item-image img").hover(
         // 마우스 올라 왔을 때
         function() {
-            var white = $(this).css("background-color", "rgba(255,255,255,0.8)");
-            white.fadeIn(300);
+            $(this).css("opacity", "0.8");
         },
 
         // 마우스 내려 갔을 때
         function() {
-            $(".new-item-image").css("background-color", "none");
+            $(".new-item-image img").css("opacity", "1");
         }
     );
 });

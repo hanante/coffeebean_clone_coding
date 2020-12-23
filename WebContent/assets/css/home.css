@@ -174,11 +174,6 @@ a {
 }
 
 /************* 내용 영역 ****************/
-/* 내용 영역 크기, 위치 설정 */
-#content {
-    border: 1px solid blue;
-}
-
 /* holiday 영역 크기 설정, 배경 이미지 삽입, 글자 날리기 */
 #div1 .holiday {
     width: auto;
@@ -333,7 +328,12 @@ table {
     margin: auto;
 }
 
-/** 슬라이드 1 전체 영역 **/
+/**** 슬라이드 1 전체 영역 ****/
+.main-wrap1 {
+    position: relative;
+    padding-bottom: 5px;
+}
+
 /* title(h2) 영역 */
 .main-wrap1 .main-title {
     width: 126px;
@@ -346,9 +346,9 @@ table {
     background: url(../img/container/div2/slide1/slide1_title.PNG) no-repeat;
 }
 
-/* 슬라이드 영역 속도 조절 */
-.product-slide {
-    transition: ease 5s;
+/* 슬라이드 1 영역 */
+.product-slide1 {
+    padding-bottom: 15px;
 }
 
 /* 슬라이드 영역 > 제품 1개 > 이미지군 영역 상대 위치 지정 */
@@ -371,12 +371,19 @@ table {
     height: 100%;
 }
 
-/* 슬라이드 영역 > 제품 1개 > 이미지군 영역 > quickview 이미지 */
-.product-slide1 .quickview img {
+/* 슬라이드 영역 > 제품 1개 > 이미지군 영역 > quickview의 a 블록 처리 */
+.product-slide1 .quickview {
+    display: block;
+    width: 198px;
+    height: 39px;
     position: absolute;
     right: 38px;
     bottom: 60px;
-    visibility: hidden;
+}
+
+/* 슬라이드 영역 > 제품 1개 > 이미지군 영역 > quickview 이미지 */
+.product-slide1 .quickview img {
+    display: none;
 }
 
 /* 슬라이드 영역 > 제품 1개 > 텍스트군 영역 */
@@ -435,7 +442,24 @@ table {
     margin: auto;
 }
 
+/* 버튼 공통 영역 */
+.stop {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 550px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+
 /**** 슬라이드 2 영역 ****/
+/* 슬라이드 2 전체 영역 */
+.main-wrap2 {
+    padding-bottom: 50px;
+    position: relative;
+}
+
 /* title(h2) 영역 */
 .main-wrap2 .main-title {
     width: 125px;
@@ -480,6 +504,11 @@ table {
     font-weight: bolder;
 }
 
+/* 버튼 영역 */
+#stop2 {
+    bottom: 50px;
+    left: 500px;
+}
 
 /**** div3 - 보라색 영역 ****/
 /* div3 전체 영역 크기, 배경 색상 지정 */
