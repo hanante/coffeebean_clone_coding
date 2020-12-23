@@ -72,9 +72,12 @@ $(document).ready(function() {
         $(this).children().attr("src", play);
         $(this).children().data("over", stop);
 
-        // 슬라이드 기능 정지
-        $(this).prev().slick("slickPause");
-
+        // 슬라이드 기능 시작, 정지 기능
+        if ($(this).children().attr("src") == "assets/img/container/div2/icon_stop.PNG") {
+            $(this).prev().slick("slickPlay");
+        } else {
+            $(this).prev().slick("slickPause");
+        }
     });
 
     /* 이미지 hover 시 이벤트 */
