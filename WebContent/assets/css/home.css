@@ -185,13 +185,6 @@ a {
     position: relative;
 }
 
-/* holiday > a 영역 블록 설정 */
-#div1 .holiday a {
-    display: block;
-    height: 539px;
-    width: auto;
-}
-
 /* event 영역 크기 설정, 배경 이미지 삽입, 글자 날리기 */
 #div1 .event {
     width: auto;
@@ -199,13 +192,6 @@ a {
     background: url(../img/container/div1/img_event.PNG) no-repeat;
     background-size: 100% 100%;
     text-indent: -10000px;
-}
-
-/* event > a 영역 블록 설정 */
-#div1 .event a {
-    display: block;
-    height: 403px;
-    width: auto;
 }
 
 
