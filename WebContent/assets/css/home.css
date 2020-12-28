@@ -453,6 +453,39 @@ table {
     background-color: white;
 }
 
+/* 슬라이드 버튼 커스텀 */
+.slide .slick-dots {
+    position: absolute;
+    left: 600px;
+}
+
+.slide .slick-dots li {
+    float: left;
+    margin-left: 8px;
+}
+
+.slide .slick-dots li button {
+    background: url("../img/container/div2/icon_dot.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+.slide .slick-dots li button::before {
+    display: none;
+}
+
+/* 선택된 슬라이드 버튼 커스텀 */
+.slide .slick-dots li.slick-active button {
+    background: url("../img/container/div2/icon_colored_dot.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+
 /**** 슬라이드 2 영역 ****/
 /* 슬라이드 2 전체 영역 */
 .main-wrap2 {
